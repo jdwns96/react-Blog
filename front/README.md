@@ -4,13 +4,13 @@ next v12
 next-wrapper v7
 react v17
 
-### next 설치
+## next 설치
 
 ```
- npx create-next-app . --typescript
+npx create-next-app . --typescript
 ```
 
-### tailwind
+## tailwind
 
 ```
 npm install -D tailwindcss postcss autoprefixer --force
@@ -42,10 +42,42 @@ module.exports = {
 @tailwind utilities;
 ```
 
-### redux
+## redux
 
 ```
 npm i redux react-redux redux-saga
 npm i next-redux-wrapper
 npm i -D redux-devtools-extension
+```
+
+## Emotion
+
+```
+npm i @emotion/react @emotion/styled
+npm i -D @emotion/babel-plugin
+```
+
+### `babelrc`
+
+```
+{
+  "presets": [
+    [
+      "next/babel",
+      {
+        "preset-react": {
+          "runtime": "automatic",
+          "importSource": "@emotion/react"
+        }
+      }
+    ]
+  ],
+  "plugins": ["@emotion/babel-plugin"]
+}
+```
+
+### `tsconfig.json`
+
+```
+"jsxImportSource": "@emotion/react",
 ```
