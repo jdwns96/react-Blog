@@ -16,7 +16,8 @@ const style = {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    background-color: #fff;
+    border-top: 2px solid #be861d;
   `,
   footerWrapper: css`
     width: 90%;

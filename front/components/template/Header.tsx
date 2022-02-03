@@ -14,13 +14,18 @@ export default function Header() {
 
 const style = {
   header: css`
+    opacity: none;
     position: relative;
     width: 100%;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    /* border-bottom: 1px solid black; */
+    /* background-color: #be861d; */
+    background-color: #fff;
+    border-bottom: 2px solid #ced4da;
+    border-bottom: 2px solid #be861d;
   `,
   headerWrapper: (theme: Theme) => css`
     width: 90%;
