@@ -3,7 +3,9 @@ import { css, Theme } from "@emotion/react";
 export default function Footer() {
   return (
     <footer css={style.footer}>
-      <div css={style.footerWrapper}></div>
+      <div css={style.footerWrapper}>
+        <p>© 2022 jdjng3</p>
+      </div>
     </footer>
   );
 }
@@ -16,8 +18,6 @@ const style = {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
-    border-top: 2px solid #be861d;
   `,
   footerWrapper: css`
     width: 90%;

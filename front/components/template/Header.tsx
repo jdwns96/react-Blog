@@ -14,15 +14,15 @@ export default function Header() {
 
 const style = {
   header: css`
+    z-index: 9999;
     opacity: none;
-    position: relative;
+    position: fixed;
+    top: 0;
     width: 100%;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border-bottom: 1px solid black; */
-    /* background-color: #be861d; */
     background-color: #fff;
     border-bottom: 2px solid #ced4da;
     border-bottom: 2px solid #be861d;
@@ -35,7 +35,6 @@ const style = {
     align-items: center;
 
     ${theme.media.mobile} {
-      /* background-color: black; */
     }
   `,
   logo: css`

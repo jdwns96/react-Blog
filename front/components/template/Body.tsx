@@ -14,9 +14,10 @@ const style = {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 60px;
   `,
   mainWrapper: (theme: Theme) => css`
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
     width: 80%;
 
     ${theme.media.mobile} {
