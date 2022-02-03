@@ -1,11 +1,14 @@
 import { useCallback, useEffect } from "react";
 import { css, Theme } from "@emotion/react";
 import { useDispatch, useSelector } from "react-redux";
-import type { RootState } from "../../store/rootReducer";
-import { sidebarToggleAction } from "../../store/global/sidebar/action";
+import type { RootState } from "../../../store/rootReducer";
+import { sidebarToggleAction } from "../../../store/global/sidebar/action";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHamburger, faTimes } from "@fortawesome/free-solid-svg-icons";
+
+import Login from "./Login";
+import Column from "./Column";
 
 export default function Sidebar() {
   const dispatch = useDispatch();
@@ -42,18 +45,12 @@ export default function Sidebar() {
         {/* icon */}
         <header css={style.sidebarHeader}>logo</header>
         <header css={style.userBox}>
-          <article>
-            <input type="text" />
-            <input type="text" />
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">로그인</button>
-          </article>
+          <Login />
         </header>
+        <hr />
         <main css={style.sidebarBody}>
-          <ul>
-            <li>javascript</li>
-            <li>react</li>
-            <li></li>
-          </ul>
+          <Column> HOME</Column>
+          <Column> JAVASCRIPT</Column>
         </main>
         <footer css={style.sidebarFooter}></footer>
       </nav>
@@ -148,16 +145,11 @@ const style = {
   sidebarBody: css`
     padding: 1rem;
     height: 100%;
-    overflow: scroll;
+    overflow: auto;
     margin-bottom: 60px;
   `,
   userBox: css`
     padding: 1rem;
-    & > article {
-      border: 2px solid #be861d;
-      height: 120px;
-      background-color: #fff;
-    }
   `,
   sidebarFooter: css`
     position: absolute;

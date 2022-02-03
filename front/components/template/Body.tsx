@@ -19,6 +19,7 @@ const style = {
   mainWrapper: (theme: Theme) => css`
     padding: 1.5rem 1rem;
     width: 80%;
+    max-width: 1920px;
 
     ${theme.media.mobile} {
       width: 100%;
