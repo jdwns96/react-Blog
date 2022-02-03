@@ -1,7 +1,7 @@
 ## 환경설정
 
-next v12
-next-wrapper v7
+next v12  
+next-wrapper v7  
 react v17
 
 ## next 설치
@@ -80,4 +80,11 @@ npm i -D @emotion/babel-plugin
 
 ```
 "jsxImportSource": "@emotion/react",
+```
+
+## fontawesome - react
+
+```
+npm i @fortawesome/react-fontawesome
+npm i @fortawesome/free-solid-svg-icons
 ```

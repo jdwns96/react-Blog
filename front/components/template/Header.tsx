@@ -22,12 +22,16 @@ const style = {
     align-items: center;
     border: 1px solid black;
   `,
-  headerWrapper: css`
+  headerWrapper: (theme: Theme) => css`
     width: 90%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    ${theme.media.mobile} {
+      /* background-color: black; */
+    }
   `,
   logo: css`
     background-color: #ffeaea;
