@@ -13,8 +13,9 @@ export default function Column(props: { children: string }) {
 const style = css`
   padding: 1rem;
   width: 100%;
-  border: 1px solid black;
-  background-color: #fff;
+
+  color: #fff;
+  background-color: #be861d;
   cursor: pointer;
   margin-bottom: 1rem;
 `;

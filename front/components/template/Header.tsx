@@ -23,9 +23,9 @@ const style = {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
-    border-bottom: 2px solid #ced4da;
-    border-bottom: 2px solid #be861d;
+    background-color: #be861d;
+    /* border-bottom: 2px solid #ced4da; */
+    /* border-bottom: 2px solid #be861d; */
   `,
   headerWrapper: (theme: Theme) => css`
     width: 90%;

@@ -47,10 +47,10 @@ export default function Sidebar() {
         <header css={style.userBox}>
           <Login />
         </header>
-        <hr />
         <main css={style.sidebarBody}>
           <Column> HOME</Column>
           <Column> JAVASCRIPT</Column>
+          <Column> PORTFOLIO</Column>
         </main>
         <footer css={style.sidebarFooter}></footer>
       </nav>
@@ -81,7 +81,7 @@ const style = {
     width: 100vw;
     height: 100vh;
     top: 0;
-    opacity: 0.5;
+    opacity: 0.8;
     background-color: #000000;
     cursor: pointer;
   `,
@@ -101,10 +101,10 @@ const style = {
     color: #be861d;
     position: absolute;
     z-index: 9999;
-    top: 5px;
-    left: -48px;
-    width: 48px;
-    height: 48px;
+    top: 0px;
+    left: -60px;
+    width: 60px;
+    height: 60px;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -119,13 +119,17 @@ const style = {
     }
   `,
   close: (theme: Theme) => css`
+    cursor: pointer;
+    color: #fff;
     display: none;
     position: absolute;
     z-index: 9999;
-    top: 0;
-    right: 0;
-    width: 60px;
-    height: 60px;
+    top: 6px;
+    right: 6px;
+    width: 48px;
+    height: 48px;
+    border-radius: 5px;
+    border: 1px solid #fff;
     font-size: 2rem;
     ${theme.media.mobile} {
       display: flex;
@@ -139,8 +143,8 @@ const style = {
     width: 100%;
     height: 60px;
     padding: 1rem 1.5rem;
-    background-color: #fff;
-    border-bottom: 2px solid #be861d;
+    background-color: #be861d;
+    /* border-bottom: 2px solid #be861d; */
   `,
   sidebarBody: css`
     padding: 1rem;
@@ -150,15 +154,16 @@ const style = {
   `,
   userBox: css`
     padding: 1rem;
+    border-bottom: 1px solid black;
   `,
   sidebarFooter: css`
     position: absolute;
     width: 100%;
     left: 0;
     bottom: 0;
-    border-top: 2px solid #be861d;
+    /* border-top: 2px solid #be861d; */
     padding: 1rem;
-    background-color: #fff;
+    background-color: #be861d;
     height: 60px;
   `,
 };
